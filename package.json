@@ -1,8 +1,8 @@
 {
   "name": "slider-react-app",
   "version": "0.1.0",
-  "homepage": "https://ddepu11.github.io/slider-react-app",
   "private": true,
+  "homepage": "https://ddepu11.github.io/slider-react-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
