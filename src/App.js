@@ -16,15 +16,18 @@ function App() {
       <main className="hero flex">
         <FaAngleDoubleLeft size="2em" className="left" />
 
-        {data.map(({ image, name, title, quote }, index) => (
-          <section key={index} className={index === 2 ? "center" : ""}>
-            <img src={image} alt="" />
-            <h4>{name}</h4>
-            <span>{title}</span>
-            <p>{quote}</p>
-            <FaQuoteRight size="3em" className="quote" />
-          </section>
-        ))}
+        {data.map(({ image, name, title, quote }, index) => {
+          
+          return (
+            <section key={index}>
+              <img src={image} alt="" />
+              <h4>{name}</h4>
+              <span>{title}</span>
+              <p>{quote}</p>
+              <FaQuoteRight size="3em" className="quote" />
+            </section>
+          );
+        })}
 
         <FaAngleDoubleRight size="2em" className="right" />
       </main>

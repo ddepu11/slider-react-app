@@ -67,9 +67,6 @@ header {
 section {
   text-align: center;
   margin-top: 30px;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 section img {
   width: 175px;
@@ -117,6 +114,24 @@ main {
 .hero {
   justify-content: space-between;
 }
-.center {
-  /* width: 960px; */
+
+section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 1s ease-out;
+  opacity: 0;
+  overflow: hidden;
+}
+
+section.center {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+section.next {
+  transform: translateX(100%);
+}
+section.prev {
+  transform: translateX(-100%);
 }
