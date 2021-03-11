@@ -1,38 +1,122 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
+:root {
+  --primary: #5de4bb;
+}
+
+/*Utility class*/
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-image: linear-gradient(
+    to right top,
+    #8492ed,
+    #c176d8,
+    #ed52a8,
+    #fd3a65,
+    #eb4b12
+  );
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(to right, #000000, #434343);
+  color: white;
+  padding: 20px 20px;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  outline: 0;
+}
+header {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 1.5em;
+  letter-spacing: 5px;
+}
+section {
+  text-align: center;
+  margin-top: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+section img {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid rgba(211, 211, 211, 0.2);
+  box-shadow: rgba(184, 181, 181, 0.35) 0px 3px 20px;
+}
+
+section h4 {
+  margin: 20px 0 10px 0;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--primary);
+}
+section p {
+  margin: 50px 0 25px 0;
+  font-size: 1em;
+  line-height: 1.8;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.quote {
+  color: var(--primary);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  position: relative;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.left {
+  position: absolute;
+  left: 0;
+  top: 220px;
 }
-
-.App-link {
-  color: #61dafb;
+.right {
+  position: absolute;
+  right: 0;
+  top: 220px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left,
+.right {
+  cursor: pointer;
+}
+.hero {
+  justify-content: space-between;
+}
+.center {
+  /* width: 960px; */
 }
