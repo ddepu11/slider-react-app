@@ -101,27 +101,34 @@ main {
   position: absolute;
   left: 0;
   top: 220px;
+  z-index: 1;
 }
 .right {
   position: absolute;
   right: 0;
   top: 220px;
 }
-.left,
-.right {
+.left:hover,
+.right:hover {
   cursor: pointer;
 }
+
 .hero {
   justify-content: space-between;
+  max-width: 800px;
+  height: 530px;
+  margin: auto;
+  overflow: hidden;
 }
 
 section {
   position: absolute;
   left: 0;
   top: 0;
-  transition: all 1s ease-out;
+  transition: all 0.5s ease;
   opacity: 0;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 section.center {
